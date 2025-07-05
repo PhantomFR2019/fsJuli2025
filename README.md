@@ -1,2 +1,2 @@
 # fsJuli2025
-FsJuli2025-BljrGit
+FsJuli2025-StudyGit
