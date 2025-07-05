@@ -81,5 +81,26 @@
  * 6. Ends
  * 
  *  
+ * Study Case 5
+ * 
+ * Tentukan algoritma dan pseudocode untuk menghitung luas permukaan balok
+ * 
+ * Algoritma:
+ * 1. Mulai
+ * 2. Input panjang, lebar, dan tinggi balok
+ * 3. Hitung luas permukaan dengan rumus: luas = 2 * (panjang * lebar + panjang * tinggi + lebar * tinggi)
+ * 4. Tampilkan hasil luas permukaan
+ * 5. Selesai
+ * Pseudocode:
+ * 1. Begins
+ * 2. Store Length as input from user
+ * 3. Store Width as input from user
+ * 4. Store Height as input from user
+ * 5. Set SurfaceArea = 2 * (Length * Width + Length * Height + Width * Height)
+ * 6. Print SurfaceArea
+ * 7. Ends
+ * 
+ * 
+ * 
  * 
  */
