@@ -134,3 +134,58 @@ else if (level >= 30 && level < 50) {
 else {
     console.log("Beginner");
 }
+
+// Study Case 4
+/**
+ * Ada 3 jenis access : Public, Protected, dan Private.
+ * Jika access kosong, maka tampilkan "Input access"
+ * 
+ * Access public, jika level dibawah 5 makan tampilkan "Public di bawah level 5"
+ * Access public, jika level diatas 5, maka tampilkan "Public di atas level 5"
+ * Access public, jika level sama dengan 5, maka tampilkan "Public five"
+ * 
+ * Access private, jika level dibawah 5 makan tampilkan "Private di bawah level 5"
+ * Access private, jika level diatas 5, maka tampilkan "Private di atas level 5"
+ * Access private, jika level sama dengan 5, maka tampilkan "Private five"
+ *
+ * Access protected, jika level dibawah 5 makan tampilkan "Protected di bawah level 5"
+ * Access protected, jika level diatas 5, maka tampilkan "Protected di atas level 5"
+ * Access protected, jika level sama dengan 5, maka tampilkan "Protected five
+ * 
+ * Jika access salah, tampilkan "Access is not defined"
+ */
+
+let access = "public"; // Ganti dengan access yang diinginkan
+let levelAccess = 5; // Ganti dengan level yang diinginkan
+switch (access) {
+    case "public":
+        if (levelAccess < 5) {
+            console.log("Public di bawah level 5");
+        } else if (levelAccess > 5) {
+            console.log("Public di atas level 5");
+        } else {
+            console.log("Public five");
+        }
+        break;
+    case "private":
+        if (levelAccess < 5) {
+            console.log("Private di bawah level 5");
+        } else if (levelAccess > 5) {
+            console.log("Private di atas level 5");
+        } else {
+            console.log("Private five");
+        }
+        break;
+    case "protected":
+        if (levelAccess < 5) {
+            console.log("Protected di bawah level 5");
+        } else if (levelAccess > 5) {
+            console.log("Protected di atas level 5");
+        } else {
+            console.log("Protected five");
+        }
+        break;
+    default:
+        console.log("Access is not defined");
+        break;
+}
