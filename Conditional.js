@@ -189,3 +189,65 @@ switch (access) {
         console.log("Access is not defined");
         break;
 }
+
+// Study Case 5
+/**
+ * Sebuah lembaga layanan IT services yg bergerak di bidang perbaikan laptop dan gadget memberikan layanan khusus berdasarkan dari status pembeli.
+ * 
+ * pembeli merupakan penduduk WNA, dan memiliki ketentuan sebagai berikut:
+ * - Lama tinggal di Indonesia 3 tahun kurang, tidak dapat diskon
+ * - Lama tinggal di Indonesia 3 hingga 5 tahun, maka mendapat diskon dengan syarat:
+ *   - Usia dibawah 21 tahun , diskon 10%
+ *   - Usia diatas 21 tahun, diskon 5%
+ * 
+ * - Lama tinggal di Indonesia 5 tahun lebih, maka mendapat diskon dengan syarat:
+ *   - Usia dibawah 21 tahun , diskon 5%
+ *   - Usia diatas 21 tahun, diskon 2.5%
+ * 
+ * Pembeli penduduk WNI, dan memiliki ketentuan sebagai berikut:
+ *   - WNI tinggal di daerah Barat Indonesia, diskon 10%
+ *   - WNI tinggal di daerah Tengah Indonesia, diskon 15%
+ *   - WNI tinggal di daerah Timur Indonesia, diskon 17.5%
+ * 
+ * contoh perhitungan:
+ * Warga merupakan WNA, lama tinggal 3 thn di Indonesia dan usia 27 tahun. Total pembelian : 100000
+ * Maka mendapat diskon 5% dari total pembelian, yaitu 5000, sehingga total yang harus dibayar adalah 95000
+ * 
+ */
+
+let customerstatus = "WNA";
+let lamaTinggal = 3;
+let usia = 27;
+
+if (customerstatus === "WNA") {
+    if (lamaTinggal < 3) {
+        console.log("Tidak dapat diskon");
+    } else if (lamaTinggal >= 3 && lamaTinggal <= 5) {
+        if (usia < 21) {
+            console.log("Diskon 10%");
+        } else {
+            console.log("Diskon 5%");
+        }
+    } else {
+        if (usia < 21) {
+            console.log("Diskon 5%");
+        } else {
+            console.log("Diskon 2.5%");
+        }
+    }
+} else if (customerstatus === "WNI") {
+    switch (daerah) {
+        case "Barat":
+            console.log("Diskon 10%");
+            break;
+        case "Tengah":
+            console.log("Diskon 15%");
+            break;
+        case "Timur":
+            console.log("Diskon 17.5%");
+            break;
+        default:
+            console.log("Daerah tidak valid");
+            break;
+    }
+}
