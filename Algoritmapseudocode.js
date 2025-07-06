@@ -100,7 +100,19 @@
  * 6. Print SurfaceArea
  * 7. Ends
  * 
- * 
- * 
- * 
  */
+
+// Volume of a cube --- can use both var or let -- let is preferred because newer and more modern
+// but var is still valid
+
+var side = 5;
+var volume = side * side * side;
+console.log("Volume of the cube is: " + volume);
+
+// Area of a circle
+var radius = 5;
+const Pi = 3.14;
+var area = Pi * radius * radius;
+console.log("Area of the circle is: " + area);
+
+// PS -- instead of console.log("TEXT: " + TOSHOW); you can use console.log(`TEXT: ${TOSHOW}`); for better readability 
