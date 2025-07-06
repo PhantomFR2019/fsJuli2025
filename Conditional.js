@@ -63,10 +63,74 @@ switch (true) {
  * tentukan algoritma, psuedocode, dan codingnya
  */
 
-let bilangan = 10; // Ganti dengan bilangan yang diinginkan
+let bilangan = 9; // Ganti dengan bilangan yang diinginkan
 if (bilangan % 2 === 0) {
     console.log(`${bilangan} adalah bilangan genap`);
 }
 else {
     console.log(`${bilangan} adalah bilangan ganjil`);
+}
+
+// Study Case 2
+/**
+ * Sebuah vending machine menjual berbagai jenis minuman.
+ * 1. Sweet Tea
+ * 2. Plain Tea
+ * 3. Coffee
+ * 4. Ice Chocolate
+ * 5. Lemonade
+ * 
+ * If customer memilih Sweet Tea, maka print "Sweet Tea is chosen, Thanks!"
+ */
+
+
+switch ("Lemonade") {
+    case "Sweet Tea":
+        console.log("Sweet Tea is chosen, Thanks!");
+        break;
+    case "Plain Tea":
+        console.log("Plain Tea is chosen, Thanks!");
+        break;
+    case "Coffee":
+        console.log("Coffee is chosen, Thanks!");
+        break;
+    case "Ice Chocolate":
+        console.log("Ice Chocolate is chosen, Thanks!");
+        break;
+    case "Lemonade":
+        console.log("Lemonade is chosen, Thanks!");
+        break;
+    default:
+        console.log("Minuman tidak tersedia");
+        break;
+}
+
+
+// Study Case 3
+/**
+ * Klasifikasi level untuk karakter dalam sebuah game terdiri dari detail berikut:
+ * 
+ * Interval Level:
+ * Lebih dari 100 = expert
+ * Antara 70 dan 100 = Pro
+ * Antara 50 dan 70 = Normal
+ * Antara 30 dan 50 = Basic
+ * Kurang dari 30 = Beginner
+ */
+
+let level = 75; // Ganti dengan level yang diinginkan
+if (level > 100) {
+    console.log("Expert");
+}
+else if (level >= 70 && level <= 100) {
+    console.log("Pro");
+}
+else if (level >= 50 && level < 70) {
+    console.log("Normal");
+}
+else if (level >= 30 && level < 50) {
+    console.log("Basic");
+}
+else {
+    console.log("Beginner");
 }
