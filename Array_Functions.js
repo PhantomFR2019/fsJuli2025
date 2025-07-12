@@ -74,12 +74,80 @@ for (let i = 0; i < student.length; i++) {
  * Average: 7.22
  */
 
+console.log()
+
 let scores = [5, 2, 3, 1, 7, 8, 10, 12, 17];
 let total = 0;
 for (let i = 0; i < scores.length; i++) {
     total += scores[i];
 }
 let average = total / scores.length;
+console.log("Study Case 1: Calculate Total and Average");
 console.log(`Total: ${total}`);
 console.log(`Average: ${average.toFixed(2)}`);
+
+
+console.log()
+
+/**
+ * 
+ * Study case 2
+ * Make a word to character array
+ * 
+ * example:
+ * var word = "Hello";
+ * 
+ * result:
+ * [H, e, l, l, o]
+ * 
+ * 
+ */
+
+let word = "Hello";
+let charArray = [];
+for (let i = 0; i < word.length; i++) {
+    charArray.push(word[i]);
+}
+console.log("Study Case 2: Word to Character Array");
+console.log(charArray);
+
+let word2 = "HAIYAA";
+let charArray2 = word2.split("");
+console.log("Study Case 2: Word to Character Array using .split()");
+console.log(charArray2);
+
+/**
+ * 
+ * Study case 3
+ * 
+ * Example1:
+ * let watches = ["Swiss Army", "Dublot", "Patek Philippe"]
+ * 
+ * Result:
+ * I have Swiss Army, Dublot, Patek Philippe watches.
+ * 
+ * 
+ * Example2:
+ * let Alphabet = ["A", "B", "C", "D", "E"]
+ * 
+ * Result:
+ * I have A, B, C, D, E alphabet.
+ * 
+ */
+
+console.log()
+
+
+let watches = ["Swiss Army", "Dublot", "Patek Philippe"];
+let watchList = watches.join(", ");
+console.log("Study Case 3: Watches List");
+console.log(`I have ${watchList} watches.`);
+
+let Alphabet = ["A", "B", "C", "D", "E"];
+let alphabetList = Alphabet.join(", ");
+console.log("Study Case 3: Alphabet List");
+console.log(`I have ${alphabetList} alphabet.`);
+
+console.log()
+
 
