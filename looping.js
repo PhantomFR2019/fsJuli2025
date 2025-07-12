@@ -166,10 +166,10 @@ console.log(`${factorialNum}! = ${factorialResult}`);
  * 12345
  */
 
-let triangleNum = 5;
+let triangleNum = 7;
 for (let i = 0; i <= triangleNum; i++) {
     let trianglePattern = "";
-    for (let j = 0; j < i; j++) {
+    for (let j = 0; j <= i; j++) {
         trianglePattern += j;
     }
     console.log(trianglePattern);
