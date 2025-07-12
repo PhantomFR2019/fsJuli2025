@@ -91,7 +91,62 @@ for (let i = 1; i <= factorNum; i++) {
     }
 }
 
-/** Study Case 3
+/** Study Case 3a
+ * 
+ * Check whether a number is prime or not
  * 
  * 
  */
+
+let primeNum = 29;
+let isPrime = true;
+for (let i = 2; i <= Math.sqrt(primeNum); i++) {
+    if (primeNum % i === 0) {
+        isPrime = false;
+        break;
+    }
+}
+
+/** Study Case 3b
+ * 
+ * Check whether a number is prime or not
+ * The prime number must only have two factors: 1 and itself
+ * 
+ * var num = 29;
+ * Result:
+ * 29 is a prime number
+ */
+
+
+let num1 = 111;
+let factor = 0
+
+for (let i = 1; i <= num1; i++) {
+    if (num1 % i === 0) {
+        factor++;
+    }
+}
+
+if (factor === 2) {
+    console.log(`${num1} is a prime number`);
+}
+else {
+    console.log(`${num1} is not a prime number`);
+}
+
+/** Study Case 4
+ * 
+ * Count the factorial of a number
+ * 
+ * var num = 5;
+ * Result:
+ * 5! = 120
+ * */
+
+let factorialNum = 10;
+let factorialResult = 1;
+
+for (let i = 1; i <= factorialNum; i++) {
+    factorialResult *= i;
+}
+console.log(`${factorialNum}! = ${factorialResult}`);
