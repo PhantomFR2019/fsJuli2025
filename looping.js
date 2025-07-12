@@ -84,7 +84,7 @@ for (let n = 1; n <= num; n++) {
  * 
  */
 
-let factorNum = 12;
+let factorNum = 15;
 for (let i = 1; i <= factorNum; i++) {
     if (factorNum % i === 0) {
         console.log(`${i} is a factor of ${factorNum}`);
