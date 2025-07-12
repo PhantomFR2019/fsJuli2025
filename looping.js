@@ -90,3 +90,8 @@ for (let i = 1; i <= factorNum; i++) {
         console.log(`${i} is a factor of ${factorNum}`);
     }
 }
+
+/** Study Case 3
+ * 
+ * 
+ */
