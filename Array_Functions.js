@@ -150,4 +150,25 @@ console.log(`I have ${alphabetList} alphabet.`);
 
 console.log()
 
+console.log("Study Case 3 using for loop:");
+
+let watchlist1 =["Swiss Army", "Dublot", "Patek Philippe"];
+let watchlist2 =["Rolex", "Tissot", "Casio"];
+
+let result = "I have ";
+for (let i = 0; i < watchlist1.length; i++) {
+    result += watchlist1[i];
+    if (i < watchlist1.length - 1) {
+        result += ", ";
+    }
+}   console.log(result + " and " + watchlist2.join(", ") + " watches.");
+console.log("I have " + watchlist1.join(", ") + " watches.");
+console.log("I have " + watchlist2.join(", ") + " watches.");
+
+console.log()
+
+// Funtion
+
+/**
+
 
