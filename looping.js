@@ -143,7 +143,7 @@ else {
  * 5! = 120
  * */
 
-let factorialNum = 10;
+let factorialNum = 8;
 let factorialResult = 1;
 
 for (let i = 1; i <= factorialNum; i++) {
@@ -152,4 +152,25 @@ for (let i = 1; i <= factorialNum; i++) {
 console.log(`${factorialNum}! = ${factorialResult}`);
 
 /** Study Case 5
+ * 
+ * print a triangle pattern
+ * 
+ * var num = 5;
+ * Result:
+ * 
+ * 0
+ * 1
+ * 12
+ * 123
+ * 1234
+ * 12345
  */
+
+let triangleNum = 5;
+for (let i = 0; i <= triangleNum; i++) {
+    let trianglePattern = "";
+    for (let j = 0; j < i; j++) {
+        trianglePattern += j;
+    }
+    console.log(trianglePattern);
+}
