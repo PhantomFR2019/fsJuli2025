@@ -170,5 +170,17 @@ console.log()
 // Funtion
 
 /**
+ * 
+ * You will now enter even-odd zone.
+ * Today only even numbered vehicles may enter
+ */
 
+function CheckPlates (number) {
+    if(number % 2 === 0) {
+        console.log("even");
+    } else {
+        console.log("odd");
+    }
+}
 
+CheckPlates;
