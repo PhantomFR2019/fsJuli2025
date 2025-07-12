@@ -183,4 +183,43 @@ function CheckPlates (number) {
     }
 }
 
-CheckPlates;
+/**
+ * 
+ * Practice 1
+ * 
+ * Change a sentence to array
+ * Count the number of element in the array.
+ * 
+ * example:
+ * "Hello good morning"
+ * will result in 3
+ * 
+ */
+
+
+let sentence = "hello good morning"
+
+function splitToArray(str) {
+    var tempArray = str.split(" ");
+    return tempArray;
+}
+
+function WordCount(sentence) {
+    var result = splitToArray(sentence);
+    var arrayLength = result.length;
+    return arrayLength;
+}
+
+console.log(WordCount(sentence));
+
+sentence = "hi I am bob";
+console.log(WordCount(sentence));
+
+
+
+
+
+
+
+
+
