@@ -150,3 +150,6 @@ for (let i = 1; i <= factorialNum; i++) {
     factorialResult *= i;
 }
 console.log(`${factorialNum}! = ${factorialResult}`);
+
+/** Study Case 5
+ */
