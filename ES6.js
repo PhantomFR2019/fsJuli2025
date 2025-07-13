@@ -14,3 +14,4 @@ console.log(multiplyArrow(6, 7)); // 42
 
 
 //Arrow function can't be hoisted
+
