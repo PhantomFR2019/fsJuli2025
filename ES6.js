@@ -31,4 +31,14 @@ numbers.forEach((number) => console.log(number * 2)); // 2 4 6 8 10
 numbers.forEach((number, index) => console.log(number * 2, index)); // 2 0 4 1 6 2 8 3 10 4
 
 
+// example of object inside of array
 
+let products = [
+  { id: 1, name: "product 1", price: 100 },
+  { id: 2, name: "product 2", price: 200 },
+  { id: 3, name: "product 3", price: 300 } ]
+console.log(products[0].name); // product 1
+console.log(products[1].price); // 200
+console.log(products[2].id); // 3
+
+products.forEach((product) => console.log(product.name)); // product 1 product 2 product 3

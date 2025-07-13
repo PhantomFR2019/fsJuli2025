@@ -111,9 +111,7 @@ let Caca = {
          for (let i = 0; index < Caca.Hobby.length; i++)
       console.log(`${i+1}, ${Caca.Hobby(i)}`);
         }
-    } //Need to check later
-
-console.log();
+}
 
 
 
