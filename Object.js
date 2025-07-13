@@ -52,4 +52,4 @@ function ArraytoObject() {
 
 }
 
-console.log(ArraytoObject);
+console.log(ArraytoObject(fruit));
