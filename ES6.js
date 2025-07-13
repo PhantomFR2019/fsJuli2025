@@ -91,8 +91,91 @@ const products3 = [
 
 // ["kemeja price 250000", "celana price 50000", "sepatu price 80000"];
 
-let productsMapped = products3.map((product) => " Price of " + product.name + " Rp. " + product.price);
-console.log(productsMapped);
+// let productsMapped = products3.map((product) => " Price of " + product.name + " Rp. " + product.price);
+// console.log(productsMapped);
+
+// const productstring = products3.map((product) => `Price of ${items.nama} Rp. ${product.price}`);
+// console.log(productstring);
+
+// .push = add element at the end
+
+// products3.push({ name: "kaos", price: 100000 })
+// console.log(products3);
+
+
+// .pop = remove element at the end
+
+products3.pop()
+console.log(products3);
+
+// .shift = remove element at the beginning
+// .unshift = add element at the beginning
+
+// .reduce = reduce the array into a single value
+// .find = find the first element that match the condition
+// .findIndex = find the index of the first element that match the condition
+// .some = check if at least one element match the condition
+// .every = check if all element match the condition
+
+//CRUD = Create, Read, Update, Delete
+
+
+let studentss = [
+  { id: 1, name: "Joko", major: "IT", Graduated: true },
+  { id: 2, name: "Yuni", major: "Accountant", Graduated: false },
+];
+
+function showStudents() {
+  console.log(`Student List:`);
+  for (let i = 0; i < studentss.length; i++) {
+    console.log("U Graduates?")
+    if (studentss[i].Graduated) {
+      console.log(` ${studentss[i].name} (${studentss[i].major}) [Yea] `);
+    } else {
+      console.log(` ${studentss[i].name} (${studentss[i].major}) [Nah]`);
+    }
+  }
+}
+
+showStudents();
+
+//Read
+
+function addStudent(id, name, major, graduated) {
+  let lastindex = studentss.length - 1;
+  let lastId = studentss[lastindex].id + 1;
+  let Graduated = false;
+
+  studentss.push({
+    id: lastId,
+    name: name,
+    major: major,
+    Graduated: Graduated,
+  });
+}
+
+function updateStudent(id, name, major, graduated) {
+  let temp = [];
+  for (let i = 0; i < studentss.length; i++) {
+    if (studentss[i].id === id) {
+      studentss[i].name = name;
+      studentss[i].major = major;
+      studentss[i].Graduated = graduated;
+    }
+    temp.push(studentss[i]);
+  }
+  students = temp;
+}
+
+function deleteStudent(id) {
+  let temp = [];
+  for (let i = 0; i < studentss.length; i++) {
+    if (studentss[i].id !== id) {
+      temp.push(studentss[i]);
+    }
+  }
+  students = temp;
+}
 
 
 
