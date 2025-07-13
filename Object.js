@@ -231,4 +231,41 @@ function availibility() {
     availibility(items);
 
 
+const Onlineshop = {
+    Shopname : "Toko Klontong",
+    Products : [
+        {
+            id:"P001",
+            name: "Kemeja Batik",
+            price: 150000,
+            category: {
+                main: "clothes",
+                sub: "Batik"
+            },
+            review: [
+                {
+                    user: "joko",
+                    rating: 5
+                },
+                {
+                    user: "Joni",
+                    rating: 4
+                }
+            ]   
+         },
+         {
+            id:2,
+            name: "Samsung S25",
+            type: "gadget",
+            price: 12500000,
+            isAvailable: false    
+         }, 
+         {
+        }
+    ]
+    
+}
+
+console.log(Onlineshop.Products[0].review[0].user);
+
 
