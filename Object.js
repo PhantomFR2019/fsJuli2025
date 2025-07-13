@@ -269,3 +269,10 @@ const Onlineshop = {
 console.log(Onlineshop.Products[0].review[0].user);
 
 
+x = 1;
+console.log('x = ' + x);
+
+
+
+
+
