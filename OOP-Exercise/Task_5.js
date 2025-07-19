@@ -241,45 +241,80 @@ categorizeCookies() {
 }
 }
 
+const myKitchen = new Kitchen();
+myKitchen.bake(
+  { category: "Chocolate", name: "Chocolate Sweety", price: 10000, ingredients: ["Chocolate", "Butter"], type: "Chocolate" },
+  { category: "Sweet", name: "Plain Butter", price: 5000, ingredients: ["Butter", "Milk"], type: "Sweet" },
+  { category: "Strawberry", name: "Berry Cake", price: 8000, ingredients: ["Strawberry", "Sugar"], type: "Strawberry" },
+  { category: "Chocolate", name: "Brownies Cakep", price: 12000, ingredients: ["Cocoa", "Flour"], type: "Chocolate" },
+  { category: "Strawberry", name: "Red Velvet", price: 9000, ingredients: ["Strawberry", "Cream"], type: "Strawberry" },
+  { category: "Sweet", name: "Sweet Butter", price: 7000, ingredients: ["Sugar", "Butter"], type: "Sweet" }
+);
 
-const myKitchen = new kitchen();
+myKitchen.showCookies();
 
-// Bake cookies
-myKitchen.bakeCookies("Chocolate Sweety", 10000, ["Chocolate", "Butter"], "Chocolate");
-myKitchen.bakeCookies("Plain Butter", 5000, ["Butter", "Milk"], "Sweet");
-myKitchen.bakeCookies("Berry Cake", 8000, ["Strawberry", "Sugar"], "Strawberry");
+console.log()
+console.log("ate haha")
+
+
+myKitchen.eat(2); // Removes cookie with ID 2 (Plain Butter)
+myKitchen.showCookies(); // Check if it’s removed
+myKitchen.showCookies();
+
+console.log()
+console.log("added sugar")
+
+myKitchen.addSugar(1); // Chocolate Sweety
+
+myKitchen.showCookies();
+
+console.log()
+console.log("what are the ingredients?")
+
+myKitchen.showIngredients(3); // Berry Cake
+myKitchen.showCookies();
+
+
+console.log()
+console.log("added ingredients")
+
+myKitchen.addIngredients(1, ["Vanilla", "Honey"]);
+myKitchen.showIngredients(1);
 
 
 myKitchen.showCookies();
 
 
-myKitchen.eatCookies(2); // Removes "Plain Butter"
-myKitchen.showCookies(); // Should no longer show "Plain Butter"
+console.log()
+console.log("Categorization by ingredient")
+
+myKitchen.categoriesCookiesByIngredient("Butter");
 
 
-myKitchen.addSugar(1); // Chocolate Sweety should now be isSweet = true
-console.log(myKitchen.container[0]); // Check isSweet is now true
+myKitchen.showCookies();
 
 
-myKitchen.showIngredients(1);
 
-myKitchen.addIngredients(1, "Milk");
-myKitchen.addIngredients(1, ["Honey", "Almond"]);
-myKitchen.showIngredients(1);
-
-
-myKitchen.categoriesCookiesByIngredient("Chocolate");
-
+console.log()
+console.log("Sorted")
 
 myKitchen.sortCookies("asc");
-myKitchen.showCookies(); // Check if sorted alphabetically (A-Z)
+myKitchen.showCookies();
 
 myKitchen.sortCookies("desc");
-myKitchen.showCookies(); // Check if sorted (Z-A)
+myKitchen.showCookies();
 
 
-myKitchen.categoriesCookies();
 
-console.log(JSON.stringify(myKitchen.container, null, 2));
+myKitchen.showCookies();
 
 
+
+console.log()
+console.log("Categorization by type")
+
+myKitchen.categorizeCookies();
+
+
+
+myKitchen.showCookies();
