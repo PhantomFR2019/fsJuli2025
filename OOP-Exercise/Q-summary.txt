@@ -1,0 +1,107 @@
+Practice Exercise
+
+OOP-Exercise-Patisserie-Chef
+
+(Full question on the bootcamp team github - oop-exercise-patisserie-chef)
+
+Summary
+
+A chef specialize in making desserts will made 3 type of desserts,
+which are:
+1.Chocolate Cookies
+2. Sweet Cookies
+3. Strawberry Cookies
+
+And all of the will be made in the chef's kitchen.
+Now help the chef to make the cookies using oop in js.
+
+Direction:
+
+Task 1
+
+make class cookie with properties:
+- id
+- name
+- price
+- ingredients (should be array)
+- type
+
+Task 2
+
+Make an inheritance for Chocolate, Sweet, Strawberry
+with properties:
+- isSweet (false -> by default)
+
+Task 3
+
+Make a kitche class as factory class with properties:
+- Key
+    + container: filled with cookies made
+- Method
+    + bake (...Cookies)
+     --> aim to make cookies and put it in the container
+    + eat (id)
+     --> aim to delete cookies from the container
+    + addSugar (id)
+     --> aim to change isSweet to true/false
+    + showCookies ()
+     --> aim to show all the cookies in the container
+
+Task 4 made a different js. file for each task (task 1-3)
+
+Task 5
+
+A. Make a method for showing all the ingredients of a cookie
+- showIngredients(id)
+
+```js
+    /*
+    "Chocolate Sweety" ingredients are:
+    1. Chocolate
+    2. Butter
+    */
+```
+B. Make a method to add ingredients to a cookie
+
+- addIngredients(id, ingredients)
+
+C. Make a method to categorized all the ingredients
+- categoriesCookiesByIngredient(ingredientName)
+
+```js
+    // Contoh: ingredientName => Chocolate
+    /*
+        Cookies with Chocolate Ingredients:
+        1. Chocolate Sweety
+        2. Brownies cakep
+    */
+   // Jika tidak ada kategori nya maka print "There's no cookie."
+
+```
+D. Make a method to sort prices of cookies
+- sortCookies(type) // 2 types: 'asc' dan 'desc'
+
+E. Make a method to categorized cookies
+- categoriesCookies()
+
+```js
+/*
+Chocolate:
+1. Chocolate Cookies
+2. Brownies Cakep
+
+Sweet:
+1. Sweet Butter
+
+Strawberry:
+1. Red Velvet
+2. Berry Cake
+*/
+```
+
+/*
+Our Cookies:
+1. [v] Chocolate Sweety, Rp 10000
+2. [ ] Plain butter, Rp. 5000
+*/
+
