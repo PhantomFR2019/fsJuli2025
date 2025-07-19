@@ -28,3 +28,15 @@ class banana extends fruit {
         super(id, name, price, stock, "Banana");
     }
 }
+
+// factory class --> compile everything into one class, manage & edit easily
+
+class FruitFactory {
+    constructor () {
+        this.shelves = this.shelves; // array
+    }
+}
+
+const supermarket = new FruitFactory([]);
+
+supermarket.shelves.push(new apple(1, "Apple", 10000, 10));
