@@ -39,7 +39,13 @@ class Supermarket {
 showItems() {
     console.log(this.shelves);
     if (this.shelves.length > 0) {
-        console.log("There are items in the shelves");
+        this.shelves.forEach((shelf) => {
+           // destructuring object
+           const {id, name, price, stock, category} = shelf;
+           console.log(`${id}. ${name}. ${price}.`)
+           console.log(`Stocks = ${stock} pcs. Category = ${category}`)
+        });
+        console.log("=====================================");
     } else {
         console.log("There are no items in the shelves");
         }
