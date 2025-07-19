@@ -67,6 +67,8 @@ class Vehicle{
 }
 
 // instanciation
+console.log("Instanciation");
+
 
 let civic = new Vehicle("Civic", "Car", "Black", 20000);
 
@@ -104,7 +106,18 @@ class Employee extends person{
     }
 }
 
+
+let john = new Employee("John", 25, "Developer", 50000);
+
+console.log(john);
+
+console.log();
+console.log();
+
+
+
 // Polymorphism
+console.log("Polymorphism");
 
 class Animal{
     constructor(name, type){
@@ -149,9 +162,13 @@ console.log(cat);
 cat.makeSound();
 
 console.log();
+console.log();
+
 
 
 // Encapsulation
+console.log("Encapsulation");
+
 
 class BankAccount{
     constructor(accountNumber, accountHolderName, balance){
@@ -183,7 +200,12 @@ account.withdraw(2000);
 
 console.log(account);
 
+console.log();
+console.log();
+
 // Abstraction
+console.log("Abstraction");
+
 
 class army {
     constructor(name, rank){
@@ -202,5 +224,19 @@ console.log(soldier);
 soldier.promote("Sergeant");
 
 console.log(soldier);
+
+console.log();
+
+/**
+ * Special note on 4 Pillars of OOP
+ * 
+ * 1. Encapsulation --> Data Protection, security
+ * 2. Abstraction --> Simplicity, clarity
+ * 3. Inheritance --> Code Reuse, Shared logic
+ * 4. Polymorphism --> Flexibility, interchanging objects
+ * 
+ * 
+ */
+
 
 
