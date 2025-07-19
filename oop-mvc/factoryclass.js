@@ -32,58 +32,54 @@ class banana extends fruit {
 // factory class --> compile everything into one class, manage & edit easily
 
 class Supermarket {
-    constructor () {
-        this.shelves = [];
-    }
-
-showItems() {
-    console.log(this.shelves);
+  constructor(shelves) {
+    this.shelves = shelves || [];
+  }
+  showItems() {
+    console.log("Supermarket shelves:");
     if (this.shelves.length > 0) {
-        this.shelves.forEach((shelf) => {
-           // destructuring object
-           const {id, name, price, stock, category} = shelf;
-           console.log(`${id}. ${name}. ${price}.`)
-           console.log(`Stocks = ${stock} pcs. Category = ${category}`)
-        });
-        console.log("=====================================");
+      this.shelves.forEach((shelf) => {
+        // destructuring object
+        const { id, name, price, stock, category } = shelf;
+        console.log(`${id}. ${name}, Rp. ${price}`);
+        console.log(`Stocks = ${stock} pcs. Category = ${category}`);
+      });
+      console.log("=======================");
     } else {
-        console.log("There are no items in the shelves");
-        }
+      console.log("There is no shelf");
     }
-
-addItems (name, price, stock, category) {
+  }
+  showItemsInTable() {
+    console.table(this.shelves);
+  }
+  addItem(name, price, stock, category) {
     let id;
     if (this.shelves.length === 0) {
-        id = 1;
-    }
-    else {
-        let lastIndex = this.shelves.length - 1;
-        id = this.shelves[lastIndex].id + 1;
+      id = 1;
+    } else {
+      let lastIndex = this.shelves.length - 1;
+      id = this.shelves[lastIndex].id + 1;
     }
     switch (category) {
-        case "Apple":
-            this.shelves.push(new apple(id, name, price, stock));
-            break;
-        case "Orange":
-            this.shelves.push(new orange(id, name, price, stock));
-            break;
-        case "Banana":
-            this.shelves.push(new banana(id, name, price, stock));
-            break;
-        default:
+      case "Apple":
+        this.shelves.push(new Apple(id, name, price, stock));
+        break;
+      case "Orange":
+        this.shelves.push(new Orange(id, name, price, stock));
+        break;
+      case "Banana":
+        this.shelves.push(new Banana(id, name, price, stock));
+        break;
     }
-    
+  }
 }
-
-}
-
 
 const supermarket = new Supermarket();
+supermarket.addItem("Royal Gala", 75000, 10, "Apple");
+supermarket.addItem("Pokan", 50000, 5, "Orange");
+supermarket.addItem("Cavendish Sunpride", 35000, 10, "Banana");
+supermarket.addItem("Queen Elizabeth", 105000, 17, "Apple");
+supermarket.addItem("Pisang Barangan", 15000, 10, "Banana");
 supermarket.showItems();
-
-supermarket.addItems("Fuji Apple", 699, 50, "Apple");
-supermarket.addItems("Royal Gala", 899, 100, "Apple");
-supermarket.addItems("Mandarin Orange", 399, 100, "Orange");
-supermarket.addItems("Sunskrit Banana", 199, 60, "Banana");
-
-supermarket.showItems();
+// supermarket.showItemsInTable();
+// console.log(supermarket);
