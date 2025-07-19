@@ -174,7 +174,7 @@ function deleteStudent(id) {
       temp.push(studentss[i]);
     }
   }
-  students = temp;
+  studentss = temp;
 }
 
 
