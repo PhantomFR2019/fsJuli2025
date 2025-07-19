@@ -52,7 +52,7 @@ class Vehicle{
         this.name = name;
         this.type = type;
         this.color = color;
-        this.price = this.price;
+        this.price = price;
 }
 }
 
@@ -61,3 +61,9 @@ class Vehicle{
 let civic = new Vehicle("Civic", "Car", "Black", 20000);
 
 console.log(civic);
+
+console.log();
+
+let bmw = new Vehicle("BMW", "Car", "Black", 30000);
+
+console.log(bmw);
