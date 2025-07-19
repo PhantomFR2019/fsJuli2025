@@ -46,3 +46,19 @@
  * 
  */
 
+
+class Vehicle{
+    constructor(name, type, color){
+        this.name = name;
+        this.type = type;
+        this.color = color;
+        this.price = this.price;
+}
+}
+
+// instanciation
+
+let civic = new Vehicle("Civic", "Car", "Black", 20000);
+let bmw = new Vehicle("BMW", "Car", "Black", 30000);
+
+console.log(civic, bmw);
