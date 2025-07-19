@@ -48,7 +48,7 @@
 
 
 class Vehicle{
-    constructor(name, type, color){
+    constructor(name, type, color, price){
         this.name = name;
         this.type = type;
         this.color = color;
