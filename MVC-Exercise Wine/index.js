@@ -10,12 +10,20 @@ switch (command) {
   case "add":
     Controller.add(params);
     break;
-  case "delete":
-    Controller.delete(params);
+  case "sell":
+    Controller.sell(params);
     break;
-  case "update":
-    Controller.update(params);
+  case "rename":
+    const id = params[0];
+    const newName = params.slice(1).join(" ");
+    Controller.rename(id, newName);
+    break;
+  case "findbyId":
+    Controller.findById(params[0]);
     break;
   default:
     Controller.message("Command not found");
 }
+
+
+// Aight task 1 done

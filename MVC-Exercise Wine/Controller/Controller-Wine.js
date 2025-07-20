@@ -9,11 +9,20 @@ class Controller {
     Wine.add(params);
   }
   static sell(params) {
-    Wine.delete(params);
+    Wine.sell(params);
   }
-  static rename(params) {
-    Wine.rename(pmrams);
+  static rename(id, newName) {
+  Wine.rename(id, newName);
   }
+  static findById(id) {
+  const wine = Wine.findById(id);
+  if (wine) {
+    View.show([wine]); // wrap in array to use console.table
+  } else {
+    this.message(`Wine with id ${id} not found.`);
+  }
+}
+
   static message(msg) {
     console.log(msg);
   }

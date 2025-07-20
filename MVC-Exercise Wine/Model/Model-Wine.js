@@ -24,6 +24,33 @@ class Wine {
     this.save(Wines);
   }
 
+   static sell(id) {
+    id = Number(id);
+    let Wines = this.getWines();
+    Wines = Wines.filter((wine) => wine.id !== id);
+    this.save(Wines);
+  }
+
+    static rename(id, newName) {
+    id = Number(id);
+    let Wines = this.getWines();
+    Wines = Wines.map((wine) => {
+      if (wine.id === id) {
+        wine.name = newName;
+      }
+      return wine;
+    });
+    this.save(Wines);
+    }
+
+
+    static findById(id) {
+        id = Number(id);
+        const Wines = this.getWines();
+        return Wines.find((wine) => wine.id === id);
+    }
+
+
   static save(Wines) {
     const WineString = JSON.stringify(Wines, null, 2);
     fs.writeFileSync("./Wine.json", WineString);
