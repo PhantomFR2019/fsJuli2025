@@ -1,0 +1,114 @@
+For full question refer to bootcamp MVC exercise in the group repo
+
+Summary
+
+A wine seller want to make an application to manage his products.
+Make a Wine Management with the application concept of MVC and OOP.
+
+Format in JSON --> not to be change
+
+[
+  {
+    "id": 1,
+    "name": "Moscato 2010",
+    "year": 2010,
+    "type": "Red",
+    "createdAt": "2021-01-10"
+  }
+]
+
+With the comment below in the Wine Management system
+// node index.js
+// node index.js help
+// node index.js wines
+// node index.js add <wine_name>
+// node index.js sell <wine_id>
+// node index.js rename <wine_id> <wine_name>
+// node index.js findById <wine_id>
+
+*Use process.argv to get the arguments from the command line.
+
+Task Objectives
+
+1. Implement the wines command.
+
+Make coding in order to show the list of wines in the shelves.
+ex:
+
+        // node index.js wines
+        output:
+        Welcome to Wine Management!!
+        1. Moscato 2010
+        2. White Bourdon
+
+2. Implement the add command.
+
+Make coding in order to add a new wine to the shelves.
+ex:
+
+        // node index.js add "Red Caliber/2015/R"
+        output:
+        Welcome to Wine Management!!
+        "Red Caliber has been added!"
+
+    <wine_name> format --> "Red Caliber/2015/R"
+    its a string and it has 3 parts:
+    1. Name of the wine
+    2. Year of the wine
+    3. Type of the wine
+
+    Type of wine:
+    1. R - Red
+    2. W - White
+    Besides of R / W it will be made to O - Other.
+
+3. Implement the sell command.
+
+Make coding in order to delete a wine from the shelves.
+ex:
+
+        // node index.js sell <"Red Caliber">
+        output:
+        Welcome to Wine Management!!
+        "Red Caliber" has been sold!
+
+4. Implement the rename command.
+
+Make coding in order to rename a wine from the shelves.
+ex:
+
+        // node index.js rename 3 "White Caliber" <wine_id> <wine_name>
+
+
+        output:
+        Welcome to Wine Management!!
+        "Red Caliber" has been renamed to "White Caliber"
+
+        // if not found
+        Id is not found!
+
+
+5. Implement findByid command.
+
+node index.js findById 1
+
+// output
+Moscato 2010 is Red Wine with age of 10 years.
+
+// if not found
+Id is not found!
+
+
+
+=================================
+Task 2 (advance practice)
+
+add more features to the program:
+
+1. to group the wine by type (R, W, O) - with group <wine_type>
+2. to sort the wine by their age (Ascending / Descending)
+
+ex:
+
+node index.js group <wine_type>
+node index.js age ascending
