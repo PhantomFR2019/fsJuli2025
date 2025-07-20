@@ -1,21 +1,19 @@
-class Controller {
-    static showCoffees() {
-        console.log("Show Coffees");
-    }
-}
+const Coffee = require("../models/Models.js");
+const View = require("../views/View");
 
 class Controller {
     static showCoffees() {
-        console.log("Show Coffees");
+        let coffees = Coffee.getCoffees();
+        View.show(coffees);
     }
-    static add() {
-        console.log("Add Coffee");
+    static addCoffee(params) {
+        Coffee.addCoffee(params);
     }
-    static update() {
-        console.log("Update Coffee");
+    static updateCoffee(params) {
+        Coffee.updateCoffee(params);
     }
-    static delete() {
-        console.log("Delete Coffee");
+    static deleteCoffee(params) {
+        Coffee.deleteCoffee(params);
     }
     static message(msg) {
         console.log(msg);
