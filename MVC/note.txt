@@ -1,0 +1,56 @@
+MVC
+
+Design Pattern
+types:
+
+Creational 
+Structural
+Behavioral
+
+What's MVC?
+
+MVC stands for Model-View-Controller. It is a design pattern used to create a flexible and maintainable architecture for software applications.
+
+The MVC pattern separates the application into three interconnected components:
+
+Model: The model represents the data and the business logic of the application. 
+It is responsible for managing the data and performing any necessary calculations or operations on it.
+
+MVC Pros and cons
+
+Pros:
+1. Separation of concerns: The MVC pattern separates the application into three distinct components, 
+   making it easier to manage and maintain the code.
+2. Flexibility: The MVC pattern allows for easy modification and extension of the application, 
+   as changes can be made to the model, view, or controller without affecting the other components.
+
+Cons:
+1. Complexity: The MVC pattern can add complexity to the application, 
+   as it requires additional code to manage the communication between the components.
+2. Overhead: The MVC pattern may introduce additional overhead, 
+   as it requires more components to be created and managed.
+
+MVC is a popular design pattern used in web development to create scalable and maintainable applications. 
+It separates the application into three interconnected components, making it easier to manage and maintain the code.
+
+
+JSON:
+JSON stands for JavaScript Object Notation. It is a lightweight data interchange format that is easy for humans to read and write, 
+and easy for machines to parse and generate. JSON is often used to transmit data between a web server and a web client, 
+such as a web browser or a mobile application.
+
+JSON is a text-based format that is similar to JavaScript objects and arrays. It uses key-value pairs to represent data, 
+with keys in double quotes and values in single quotes. For example, the following JSON object represents a person:
+
+File System Node:
+
+A file system node is a fundamental unit of a file system that represents a file or a directory. 
+It is a data structure that contains information about the file or directory, such as its name, 
+location, size, and permissions. File system nodes are used to organize and manage files and directories in a file system.
+
+File System Node in MVC:
+
+In the context of MVC, a file system node can be used to represent a model. 
+A model in MVC is a representation of the data that the application is working with, 
+and it is responsible for managing the data and providing it to the view and controller.
+
