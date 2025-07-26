@@ -1,5 +1,5 @@
 const Coffee = require("../models/Models.js");
-const View = require("../views/View");
+const View = require("../views/View.js");
 
 class Controller {
     static showCoffees() {
